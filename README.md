@@ -18,7 +18,8 @@ podman build -t quay.io/sovereign-selfheal/ticketing-system:<tag> ticketing-syst
 podman build -t quay.io/sovereign-selfheal/ticketing-mcp-server:<tag> ticketing-mcp-server/
 ```
 
-CI (`.github/workflows/build.yml`) does this on every `v*` tag.
+CI (`.github/workflows/build.yml`) runs on pull requests and pushes to `main` to verify
+that both images build (no push). Quay builds/pushes tagged release images separately.
 
 ## Consumer
 
