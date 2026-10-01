@@ -8,7 +8,7 @@ Two small services used by the `triage-agent` demo:
   wraps the ticketing-system REST API as MCP tools: `create_incident`, `list_incidents`,
   `get_incident`, `update_incident`, `add_work_note`.
 
-Both are independent Python apps, each with its own `Dockerfile` and `requirements.txt`,
+Both are independent Python apps, each with its own `Containerfile` and `requirements.txt`,
 built and published as two separate images.
 
 ## Build
